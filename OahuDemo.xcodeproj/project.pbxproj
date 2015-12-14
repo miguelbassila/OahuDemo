@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		262A944513B2FB96BA39C92E /* Pods_OahuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20488EBD68BCC472706D72A /* Pods_OahuDemo.framework */; };
+		FCE191B81C1A0A0900C60040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191B71C1A0A0900C60040 /* AppDelegate.swift */; };
+		FCE191BA1C1A0A0900C60040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191B91C1A0A0900C60040 /* ViewController.swift */; };
+		FCE191BD1C1A0A0900C60040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE191BB1C1A0A0900C60040 /* Main.storyboard */; };
+		FCE191BF1C1A0A0900C60040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE191BE1C1A0A0900C60040 /* Assets.xcassets */; };
+		FCE191C21C1A0A0900C60040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE191C01C1A0A0900C60040 /* LaunchScreen.storyboard */; };
+		FCE191CD1C1A0A0900C60040 /* OahuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191CC1C1A0A0900C60040 /* OahuDemoTests.swift */; };
+		FCE191D81C1A0A0900C60040 /* OahuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191D71C1A0A0900C60040 /* OahuDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCE191C91C1A0A0900C60040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCE191AC1C1A0A0900C60040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCE191B31C1A0A0900C60040;
+			remoteInfo = OahuDemo;
+		};
+		FCE191D41C1A0A0900C60040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCE191AC1C1A0A0900C60040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCE191B31C1A0A0900C60040;
+			remoteInfo = OahuDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F1F220829AF35CB0D516634 /* Pods-OahuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OahuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OahuDemo/Pods-OahuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AE85249E628798FFDEC26770 /* Pods-OahuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OahuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OahuDemo/Pods-OahuDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E20488EBD68BCC472706D72A /* Pods_OahuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OahuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE191B41C1A0A0900C60040 /* OahuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OahuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE191B71C1A0A0900C60040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCE191B91C1A0A0900C60040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCE191BC1C1A0A0900C60040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE191BE1C1A0A0900C60040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCE191C11C1A0A0900C60040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCE191C31C1A0A0900C60040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE191C81C1A0A0900C60040 /* OahuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OahuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE191CC1C1A0A0900C60040 /* OahuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OahuDemoTests.swift; sourceTree = "<group>"; };
+		FCE191CE1C1A0A0900C60040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE191D31C1A0A0900C60040 /* OahuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OahuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE191D71C1A0A0900C60040 /* OahuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OahuDemoUITests.swift; sourceTree = "<group>"; };
+		FCE191D91C1A0A0900C60040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCE191B11C1A0A0900C60040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262A944513B2FB96BA39C92E /* Pods_OahuDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191C51C1A0A0900C60040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191D01C1A0A0900C60040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55A3632F3574A0BAFE28881F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E20488EBD68BCC472706D72A /* Pods_OahuDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E00C08B2FFB1E19889202D7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE85249E628798FFDEC26770 /* Pods-OahuDemo.debug.xcconfig */,
+				2F1F220829AF35CB0D516634 /* Pods-OahuDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCE191AB1C1A0A0900C60040 = {
+			isa = PBXGroup;
+			children = (
+				FCE191B61C1A0A0900C60040 /* OahuDemo */,
+				FCE191CB1C1A0A0900C60040 /* OahuDemoTests */,
+				FCE191D61C1A0A0900C60040 /* OahuDemoUITests */,
+				FCE191B51C1A0A0900C60040 /* Products */,
+				E00C08B2FFB1E19889202D7B /* Pods */,
+				55A3632F3574A0BAFE28881F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCE191B51C1A0A0900C60040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE191B41C1A0A0900C60040 /* OahuDemo.app */,
+				FCE191C81C1A0A0900C60040 /* OahuDemoTests.xctest */,
+				FCE191D31C1A0A0900C60040 /* OahuDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE191B61C1A0A0900C60040 /* OahuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FCE191B71C1A0A0900C60040 /* AppDelegate.swift */,
+				FCE191B91C1A0A0900C60040 /* ViewController.swift */,
+				FCE191BB1C1A0A0900C60040 /* Main.storyboard */,
+				FCE191BE1C1A0A0900C60040 /* Assets.xcassets */,
+				FCE191C01C1A0A0900C60040 /* LaunchScreen.storyboard */,
+				FCE191C31C1A0A0900C60040 /* Info.plist */,
+			);
+			path = OahuDemo;
+			sourceTree = "<group>";
+		};
+		FCE191CB1C1A0A0900C60040 /* OahuDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCE191CC1C1A0A0900C60040 /* OahuDemoTests.swift */,
+				FCE191CE1C1A0A0900C60040 /* Info.plist */,
+			);
+			path = OahuDemoTests;
+			sourceTree = "<group>";
+		};
+		FCE191D61C1A0A0900C60040 /* OahuDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCE191D71C1A0A0900C60040 /* OahuDemoUITests.swift */,
+				FCE191D91C1A0A0900C60040 /* Info.plist */,
+			);
+			path = OahuDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCE191B31C1A0A0900C60040 /* OahuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE191DC1C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemo" */;
+			buildPhases = (
+				3717041C618C53E782BFFDEF /* Check Pods Manifest.lock */,
+				FCE191B01C1A0A0900C60040 /* Sources */,
+				FCE191B11C1A0A0900C60040 /* Frameworks */,
+				FCE191B21C1A0A0900C60040 /* Resources */,
+				74298D7CB698DC394B3E2BBB /* Embed Pods Frameworks */,
+				097B8681265BCD602859B1E0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OahuDemo;
+			productName = OahuDemo;
+			productReference = FCE191B41C1A0A0900C60040 /* OahuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCE191C71C1A0A0900C60040 /* OahuDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE191DF1C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemoTests" */;
+			buildPhases = (
+				FCE191C41C1A0A0900C60040 /* Sources */,
+				FCE191C51C1A0A0900C60040 /* Frameworks */,
+				FCE191C61C1A0A0900C60040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE191CA1C1A0A0900C60040 /* PBXTargetDependency */,
+			);
+			name = OahuDemoTests;
+			productName = OahuDemoTests;
+			productReference = FCE191C81C1A0A0900C60040 /* OahuDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCE191D21C1A0A0900C60040 /* OahuDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE191E21C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemoUITests" */;
+			buildPhases = (
+				FCE191CF1C1A0A0900C60040 /* Sources */,
+				FCE191D01C1A0A0900C60040 /* Frameworks */,
+				FCE191D11C1A0A0900C60040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE191D51C1A0A0900C60040 /* PBXTargetDependency */,
+			);
+			name = OahuDemoUITests;
+			productName = OahuDemoUITests;
+			productReference = FCE191D31C1A0A0900C60040 /* OahuDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCE191AC1C1A0A0900C60040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Miguel Bassila";
+				TargetAttributes = {
+					FCE191B31C1A0A0900C60040 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FCE191C71C1A0A0900C60040 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCE191B31C1A0A0900C60040;
+					};
+					FCE191D21C1A0A0900C60040 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCE191B31C1A0A0900C60040;
+					};
+				};
+			};
+			buildConfigurationList = FCE191AF1C1A0A0900C60040 /* Build configuration list for PBXProject "OahuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCE191AB1C1A0A0900C60040;
+			productRefGroup = FCE191B51C1A0A0900C60040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCE191B31C1A0A0900C60040 /* OahuDemo */,
+				FCE191C71C1A0A0900C60040 /* OahuDemoTests */,
+				FCE191D21C1A0A0900C60040 /* OahuDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCE191B21C1A0A0900C60040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE191C21C1A0A0900C60040 /* LaunchScreen.storyboard in Resources */,
+				FCE191BF1C1A0A0900C60040 /* Assets.xcassets in Resources */,
+				FCE191BD1C1A0A0900C60040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191C61C1A0A0900C60040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191D11C1A0A0900C60040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		097B8681265BCD602859B1E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OahuDemo/Pods-OahuDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3717041C618C53E782BFFDEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74298D7CB698DC394B3E2BBB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OahuDemo/Pods-OahuDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCE191B01C1A0A0900C60040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE191BA1C1A0A0900C60040 /* ViewController.swift in Sources */,
+				FCE191B81C1A0A0900C60040 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191C41C1A0A0900C60040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE191CD1C1A0A0900C60040 /* OahuDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE191CF1C1A0A0900C60040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE191D81C1A0A0900C60040 /* OahuDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCE191CA1C1A0A0900C60040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCE191B31C1A0A0900C60040 /* OahuDemo */;
+			targetProxy = FCE191C91C1A0A0900C60040 /* PBXContainerItemProxy */;
+		};
+		FCE191D51C1A0A0900C60040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCE191B31C1A0A0900C60040 /* OahuDemo */;
+			targetProxy = FCE191D41C1A0A0900C60040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCE191BB1C1A0A0900C60040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE191BC1C1A0A0900C60040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE191C01C1A0A0900C60040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE191C11C1A0A0900C60040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCE191DA1C1A0A0900C60040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCE191DB1C1A0A0900C60040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE191DD1C1A0A0900C60040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE85249E628798FFDEC26770 /* Pods-OahuDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OahuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCE191DE1C1A0A0900C60040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1F220829AF35CB0D516634 /* Pods-OahuDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OahuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCE191E01C1A0A0900C60040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OahuDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OahuDemo.app/OahuDemo";
+			};
+			name = Debug;
+		};
+		FCE191E11C1A0A0900C60040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OahuDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OahuDemo.app/OahuDemo";
+			};
+			name = Release;
+		};
+		FCE191E31C1A0A0900C60040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OahuDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OahuDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FCE191E41C1A0A0900C60040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OahuDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelbassila.OahuDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OahuDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCE191AF1C1A0A0900C60040 /* Build configuration list for PBXProject "OahuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE191DA1C1A0A0900C60040 /* Debug */,
+				FCE191DB1C1A0A0900C60040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE191DC1C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE191DD1C1A0A0900C60040 /* Debug */,
+				FCE191DE1C1A0A0900C60040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE191DF1C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE191E01C1A0A0900C60040 /* Debug */,
+				FCE191E11C1A0A0900C60040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE191E21C1A0A0900C60040 /* Build configuration list for PBXNativeTarget "OahuDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE191E31C1A0A0900C60040 /* Debug */,
+				FCE191E41C1A0A0900C60040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCE191AC1C1A0A0900C60040 /* Project object */;
+}
