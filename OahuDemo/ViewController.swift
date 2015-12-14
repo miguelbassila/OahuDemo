@@ -10,14 +10,26 @@ import UIKit
 import oahu
 import WebKit
 
-class ABCViewController: UIViewController {
+class ViewController: UIViewController {
 
   var browser: Oahu?
+
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    browser = Oahu(forView: view, allowsBackForwardNavigationGestures: true)
+    var evalutors = [Evaluator]()
+
+    let evaluator = OahuEvaluator(closure: { () -> Void in
+      print("show")
+      }, url: "tech")
+    
+
+    evalutors.append(evaluator)
+
+    let interceptor = Interceptor(evaluators: evalutors)
+
+    browser = Oahu(forView: view, allowsBackForwardNavigationGestures: true, interceptor: interceptor)
     browser?.loadRequest("http://www.globo.com")
   }
 

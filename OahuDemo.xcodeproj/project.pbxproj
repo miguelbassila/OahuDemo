@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		262A944513B2FB96BA39C92E /* Pods_OahuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20488EBD68BCC472706D72A /* Pods_OahuDemo.framework */; };
-		FCCE26B81C1B5463006CDAD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE26B71C1B5463006CDAD3 /* ViewController.m */; };
-		FCE072791C1EF4E10088E10F /* DemoWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE072781C1EF4E10088E10F /* DemoWebView.swift */; };
 		FCE191B81C1A0A0900C60040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191B71C1A0A0900C60040 /* AppDelegate.swift */; };
-		FCE191BA1C1A0A0900C60040 /* ABCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191B91C1A0A0900C60040 /* ABCViewController.swift */; };
+		FCE191BA1C1A0A0900C60040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE191B91C1A0A0900C60040 /* ViewController.swift */; };
 		FCE191BD1C1A0A0900C60040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE191BB1C1A0A0900C60040 /* Main.storyboard */; };
 		FCE191BF1C1A0A0900C60040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE191BE1C1A0A0900C60040 /* Assets.xcassets */; };
 		FCE191C21C1A0A0900C60040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE191C01C1A0A0900C60040 /* LaunchScreen.storyboard */; };
@@ -41,12 +39,9 @@
 		AE85249E628798FFDEC26770 /* Pods-OahuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OahuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OahuDemo/Pods-OahuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E20488EBD68BCC472706D72A /* Pods_OahuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OahuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCE26B51C1B5463006CDAD3 /* OahuDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OahuDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		FCCE26B61C1B5463006CDAD3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FCCE26B71C1B5463006CDAD3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FCE072781C1EF4E10088E10F /* DemoWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoWebView.swift; sourceTree = "<group>"; };
 		FCE191B41C1A0A0900C60040 /* OahuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OahuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE191B71C1A0A0900C60040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCE191B91C1A0A0900C60040 /* ABCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCViewController.swift; sourceTree = "<group>"; };
+		FCE191B91C1A0A0900C60040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCE191BC1C1A0A0900C60040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE191BE1C1A0A0900C60040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE191C11C1A0A0900C60040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,10 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE191B71C1A0A0900C60040 /* AppDelegate.swift */,
-				FCCE26B61C1B5463006CDAD3 /* ViewController.h */,
-				FCE191B91C1A0A0900C60040 /* ABCViewController.swift */,
-				FCE072781C1EF4E10088E10F /* DemoWebView.swift */,
-				FCCE26B71C1B5463006CDAD3 /* ViewController.m */,
+				FCE191B91C1A0A0900C60040 /* ViewController.swift */,
 				FCE191BB1C1A0A0900C60040 /* Main.storyboard */,
 				FCE191BE1C1A0A0900C60040 /* Assets.xcassets */,
 				FCE191C01C1A0A0900C60040 /* LaunchScreen.storyboard */,
@@ -341,9 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCCE26B81C1B5463006CDAD3 /* ViewController.m in Sources */,
-				FCE191BA1C1A0A0900C60040 /* ABCViewController.swift in Sources */,
-				FCE072791C1EF4E10088E10F /* DemoWebView.swift in Sources */,
+				FCE191BA1C1A0A0900C60040 /* ViewController.swift in Sources */,
 				FCE191B81C1A0A0900C60040 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
