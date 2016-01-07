@@ -1,27 +1,60 @@
-//
-//  ViewController.swift
-//  OahuDemo
-//
-//  Created by Miguel Bassila on 12/10/15.
-//  Copyright © 2015 Miguel Bassila. All rights reserved.
-//
-
 import UIKit
 import oahu
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, OahuDelegate {
+    var oahu: Oahu?
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    let browser = Oahu(forView: view, allowsBackForwardNavigationGestures: true)
-    browser.loadRequest("http://www.globo.com")
-  }
+    var interceptor: Interceptor?
+    var contentType: String?
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        oahu = Oahu(forView: view, allowsBackForwardNavigationGestures: true, interceptor: interceptor)
+        oahu?.loadRequest("http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2de143494c0b295cca9337e1e96b00e0")
+//        oahu?.loadRequest("http://www.elo7.com.br")
+        oahu?.oahuDelegate = self
+    }
 
 
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        if ((contentType?.containsString("json")) != nil) {
+
+            let data = try! String(contentsOfURL: webView.URL!, encoding: NSUTF8StringEncoding)
+            print(data)
+
+            let dick = convertStringToDictionary(data)
+            print(dick)
+        }
+    }
+
+    func convertStringToDictionary(text: String) -> [String: AnyObject]? {
+        if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
+
+            do {
+                return try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String:AnyObject]
+            } catch {
+                return nil
+            }
+
+        }
+
+        return nil
+    }
+
+    func webView(webView: WKWebView, decidePolicyForNavigationResponse navigationResponse: WKNavigationResponse, decisionHandler: (WKNavigationResponsePolicy) -> Void) {
+        if let response = navigationResponse.response as? NSHTTPURLResponse {
+            if let contentType = response.allHeaderFields["Content-Type"] as? String {
+                self.contentType = contentType
+            }
+
+            print(response.description)
+        }
+
+        decisionHandler(.Allow)
+    }
 }
+
+
 
