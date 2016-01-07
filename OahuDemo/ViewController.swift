@@ -19,27 +19,25 @@ class ViewController: UIViewController, OahuDelegate {
 
 
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-        if ((contentType?.containsString("json")) != nil) {
+        if let contentType = self.contentType  {
+            if contentType == "application/json; charset=utf-8" {
+                let data = try! String(contentsOfURL: webView.URL!, encoding: NSUTF8StringEncoding)
+                print(data)
 
-            let data = try! String(contentsOfURL: webView.URL!, encoding: NSUTF8StringEncoding)
-            print(data)
-
-            let dick = convertStringToDictionary(data)
-            print(dick)
+                let dick = convertStringToDictionary(data)
+                print(dick)
+            }
         }
     }
 
     func convertStringToDictionary(text: String) -> [String: AnyObject]? {
         if let data = text.dataUsingEncoding(NSUTF8StringEncoding) {
-
             do {
                 return try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? [String:AnyObject]
             } catch {
                 return nil
             }
-
         }
-
         return nil
     }
 
@@ -48,8 +46,6 @@ class ViewController: UIViewController, OahuDelegate {
             if let contentType = response.allHeaderFields["Content-Type"] as? String {
                 self.contentType = contentType
             }
-
-            print(response.description)
         }
 
         decisionHandler(.Allow)
